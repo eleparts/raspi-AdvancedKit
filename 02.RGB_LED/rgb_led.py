@@ -5,6 +5,7 @@ import time
 colors = [0xFF0000, 0xFF0023, 0xFF00FF, 0x0000FF, 0x00FF00, 0x64EB00, 0x4BFB00]
 pins = {'pin_R':11, 'pin_G':9, 'pin_B':10}  # 핀 지정   △ // 11 9 10
 
+GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)            # GPIO BCM 모드 설정
 
 for i in pins:

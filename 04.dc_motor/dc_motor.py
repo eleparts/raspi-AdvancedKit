@@ -32,4 +32,5 @@ except KeyboardInterrupt:       # Ctrl+c => 종료
   
   GPIO.output(A,GPIO.LOW) 
   GPIO.output(B,GPIO.LOW)
+  
   GPIO.cleanup()                # GPIO 점유 리소스 해제

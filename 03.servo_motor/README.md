@@ -1,8 +1,10 @@
 # 라즈베리파이 고급 키트 - 서보모터
 
-[라즈베리파이 고급 키트 - 서보모터](https://blog.naver.com/elepartsblog/221506211679)  
+블로그 바로가기 : [라즈베리파이 고급 키트 - 서보모터](https://blog.naver.com/elepartsblog/221506211679)  
 
 ## 회로 연결  
+
+자세한 사항은 블로그 설명을 참고해 주세요.  
 
 ![servo_motor](https://blogfiles.pstatic.net/MjAxOTA0MDVfMjk3/MDAxNTU0NDM4OTk2MTc1.BW2Hj_aSAHvE0gR0_QIzJyw-yRuKiF-AoPhjJ54p1rcg.sUJcy-tmGMoHgPNcBNMMaGHCpXQyoVqIMgT14S1VdvIg.PNG.elepartsblog/1.PNG?type=w2)  
 

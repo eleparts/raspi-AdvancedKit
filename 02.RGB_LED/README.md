@@ -1,8 +1,10 @@
 # 라즈베리파이 고급키트 - RGB LED 모듈
 
-[라즈베리파이 고급키트 - RGB LED 모듈](https://blog.naver.com/elepartsblog/221504611388)  
+블로그 바로가기 : [라즈베리파이 고급키트 - RGB LED 모듈](https://blog.naver.com/elepartsblog/221504611388)  
 
 ## 회로 연결  
+
+자세한 사항은 블로그 설명을 참고해 주세요.  
 
 ![rgb_led](https://blogfiles.pstatic.net/MjAxOTA0MDNfMTY5/MDAxNTU0Mjc4Mzc5Njc2.szjY2EdJf7oR8U7ffp6uH4LLihp5PfytvkZvkn9z39gg.AuahOqKYFw4eYR-5VO7bmFQOTgboxumMUEj3hMCWfqwg.PNG.elepartsblog/1.PNG?type=w2)
 

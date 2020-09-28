@@ -1,8 +1,10 @@
 # 라즈베리파이 고급 키트 - DC 모터
 
-[라즈베리파이 고급 키트 - DC 모터](https://blog.naver.com/elepartsblog/221508416424)  
+블로그 바로가기 : [라즈베리파이 고급 키트 - DC 모터](https://blog.naver.com/elepartsblog/221508416424)  
 
 ## 회로 연결  
+
+자세한 사항은 블로그 설명을 참고해 주세요.  
 
 ![dc_motor](https://blogfiles.pstatic.net/MjAxOTA0MDhfMTc1/MDAxNTU0Njk5NTIxODMx.hdBdEL11jW_O1Alj9VWefIF_swYKxA3covD8j4syhDMg.okpC8Zcba7-LyW5zlX0JRM9V1XRARkUJL01s_d2oPQcg.PNG.elepartsblog/2.PNG?type=w2)  
 

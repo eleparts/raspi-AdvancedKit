@@ -32,7 +32,7 @@ git clone https://github.com/adafruit/Adafruit_Python_DHT.git
 
 cd Adafruit_Python_DHT
 
-sudo python3 setup.py install
+sudo python setup.py install
 ```
 
 예제코드 실행  
@@ -41,6 +41,6 @@ sudo python3 setup.py install
 # 예제코드 디렉토리로 이동
 cd examples
 
-# 예제 코드 실행
-sudo python3 AdafruitDHT.py
+# 예제 코드 실행 / 11 2 : DHT11 , GPIO BCM P2
+sudo ./AdafruitDHT.py 11 2
 ```

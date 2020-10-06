@@ -6,12 +6,14 @@
 
 자세한 사항은 블로그 설명을 참고해 주세요.  
 
-| OLED | 라즈베리파이 |
+| OLED | 라즈베리파이 PIN 번호 |
 |------|-------------|
-| VCC  | 3.3V |
-| GND  | GND  |
-| SCL  | 5    |
-| SDA  | 3    |
+| VCC  | 3.3V        |
+| GND  | GND         |
+| SDA  | 3 (SDA)     |
+| SCL  | 5 (SCL)     |
+
+- 위 PIN 번호는 GPIO 핀 40개의 순서 번호(3.3V 1번, 5V 2번...)로, BCM 핀 번호는 2,3 번 입니다.
 
 ## 예제 실행  
 
@@ -23,21 +25,28 @@
 
 블로그를 참고하여 아래의 명령어로 실행해 줍니다.  
 
-블로그에서는 이미지를 직접 제작, 라즈베리파이로 옮겨 사용하지만 예제에서 샘플 파일을 같이 제공하고 있어 이미지 파일 제작을 하지 않아도 진행 가능합니다.  
+블로그에서는 이미지를 직접 제작, 라즈베리파이로 옮겨 사용하지만 아래 예제에서는 샘플 이미지 파일을 같이 제공하고 있어 이미지 파일 제작을 하지 않아도 진행 가능합니다.  
+
+먼저, 모듈사용을 위해 라즈베리파이 설정에서 I2C를 Enable 해 줍니다.  
 
 ```bash
-sudo python -m pip install --upgrade pip setuptools wheel
+# 모듈 연결/ I2C 주소 확인
+i2cdetect -y 1
+```
 
-sudo pip install Adafruit-SSD1306
+아래 명령어로 예제 다운로드 및 라이브러리 설치, 예제를 실행해 볼 수 있습니다.  
 
+```bash
 # 예제 다운로드  
-git clone https://github.com/adafruit/Adafruit_Python_SSD1306
+git clone https://github.com/adafruit/Adafruit_CircuitPython_SSD1306/
 
-cd Adafruit-SSD1306/example
+# 라이브러리 설치 (pip3)
+sudo pip3 install adafruit-blinka
+sudo pip3 install adafruit-circuitpython-ssd1306
 
-# 도형 출력  
-sudo python shapes.py
+# 예제 디렉토리로 이동
+cd Adafruit_CircuitPython_SSD1306/examples
 
-# 이미지 출력  
-sudo python image.py
+# 이미지 출력 예제
+sudo python3 ssd1306_pillow_images.py
 ```

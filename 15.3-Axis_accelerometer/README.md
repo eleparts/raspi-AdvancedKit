@@ -21,15 +21,20 @@
 ```bash
 sudo apt-get install git build-essential python-dev
 
-git clone https://github.com/adafruit/Adafruit_Python_ADXL345.git
+git clone https://github.com/adafruit/Adafruit_Python_ADXL345
 cd Adafruit_Python_ADXL345
 sudo python setup.py install
+
+# or
+
+sudo pip3 install adafruit-adxl345
 ```
 
 예제 실행  
 
 ```bash
-cd Adafruit_Python_ADXL345/examples
+cd examples
+#cd Adafruit_Python_ADXL345/examples
 
 sudo python3 simpletest.py
 ```

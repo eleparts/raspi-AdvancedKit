@@ -1,7 +1,7 @@
-import RPi.GPGPIO as GPIO      
+import RPi.GPIO as GPIO
 import time 
 
-GPIO.setwarnings(False)         
+GPIO.setwarnings(False)
 
 Ds = 4      # 14pin
 STCP = 5    # 12pin

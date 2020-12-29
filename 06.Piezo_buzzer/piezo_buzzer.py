@@ -18,21 +18,21 @@ p = GPIO.PWM(buzzer, 100)
 list = [0,0,4,4,5,5,4,3,3,2,2,1,1,0]      # 작은별 노래
 
 try:
-  while 1:                                # 무한 반복
-    if GPIO.input(sw) == 1:               # 스위치가 눌리면
-      p.start(100)                        # pwm 시작
-      p.ChangeDutyCycle(90)               # dutycycle 변경
+    while 1:                                        # 무한 반복
+        if GPIO.input(sw) == 1:                     # 스위치가 눌리면
+            p.start(100)                            # pwm 시작
+            p.ChangeDutyCycle(90)                   # dutycycle 변경
 
-      for i in range(len(list)):          # len() => 길이 추출
-        p.ChangeFrequency(scale[list[i]]) # 주파수 변경
+            for i in range(len(list)):              # len() => 길이 추출
+                p.ChangeFrequency(scale[list[i]])   # 주파수 변경
 
-        if (i+1)%7 == 0:                  # 7번째 음 박자 변경
-          time.sleep(1)
-        else :
-          time.sleep(0.5)
+                if (i+1)%7 == 0:                    # 7번째 음 박자 변경
+                    time.sleep(1)
+                else :
+                    time.sleep(0.5)
 
-      p.stop()                            # pwm 종료
+            p.stop()                            # pwm 종료
 
-except KeyboardInterrupt:                 # ctrl+c->종료
-  GPIO.cleanup()
-  
+except KeyboardInterrupt:                       # ctrl+c->종료
+    GPIO.cleanup()
+    

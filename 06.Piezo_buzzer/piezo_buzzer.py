@@ -8,7 +8,7 @@ buzzer  = 24
 sw      = 16
 
 scale = [ 261, 294, 329, 349, 392, 440, 493, 523 ]
-          #도   레   미   파    솔   라   시   도  : PWM
+        #  도   레   미   파    솔   라   시   도  : PWM
 
 GPIO.setup(buzzer, GPIO.OUT)              # 출력 설정
 GPIO.setup(sw, GPIO.IN)                   # 입력 설정

@@ -32,7 +32,7 @@ try:
 
         value=Read_Keypad() # result값 저장
 
-        if value != 0:      #result가 0이 아니면
+        if value != 0:      # result가 0이 아니면
             print(value)    # result 출력
             time.sleep(0.1)
 

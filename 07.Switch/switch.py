@@ -11,7 +11,7 @@ GPIO.setup(led,GPIO.OUT)
 
 try:
     while 1:
-        if GPIO.input(sw)==1:
+        if GPIO.input(sw)==1:           # 스위치 감지
             GPIO.output(led,GPIO.HIGH)
         else :
             GPIO.output(led,GPIO.LOW)

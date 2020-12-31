@@ -21,16 +21,16 @@ Seq =  [[0,0,0,1],
         [1,0,0,0]]
 
 try:
-    while 1:                          # 무한 반복
+    while 1:                            # 무한 반복
         for pin in range(0, 4):
             xpin = StepPins[pin]
 
-            if Seq[StepCounter][pin]!=0:  # Seq[][]가 0이 아니면 동작
+            if Seq[StepCounter][pin]!=0:    # Seq[][]가 0이 아니면 동작
                 GPIO.output(xpin, True)
             else:
                 GPIO.output(xpin, False)
 
-        StepCounter += 1                # 1 증가
+        StepCounter += 1                    # 1 증가
 
         # 시퀀스가 끝나면 다시 시작
         if (StepCounter == StepCount):
@@ -42,5 +42,5 @@ try:
         #다음 동작 기다리기
         time.sleep(0.01)
 
-except KeyboardInterrupt: # Ctrl+c => 종료
+except KeyboardInterrupt:   # Ctrl+c => 종료
     GPIO.clenup()

@@ -38,7 +38,7 @@ def Display(num):
     for i in range(4): 
 
         if y==0:
-            d=fnd[y] # 해당 자리의 숫자배열 출력
+            d=fnd[y]    # 해당 자리의 숫자배열 출력
             for j in pin[3:]:
                 if y+7==j:
                     IO.output(j,IO.LOW)   # 자리에 해당하는 fnd on
